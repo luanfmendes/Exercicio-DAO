@@ -28,7 +28,7 @@ class VeiculoTeste {
 	
 	@BeforeEach
 	public void arrange() {
-		veiculo = new Veiculo(1,"DZB-9871", "Vermelho", 1995);
+		veiculo = new Veiculo("DZB-9871", "Vermelho", 1995);
 		try {
 			dao.cadastrar(veiculo);
 			dao.commit();
